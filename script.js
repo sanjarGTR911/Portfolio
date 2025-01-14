@@ -36,6 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "A sleek, responsive portfolio website designed to showcase my projects and skills. Built using modern web technologies.",
       technologies: "HTML, CSS, JavaScript",
     },
+    4: {
+      title: "Telegram Bots",
+      description: "Bank Transaction Notifier: Sends real-time notifications about incoming funds, including sender details and transaction amounts, directly to the user’s Telegram account.\n" +
+                   "Music Search Bot: Allows users to search for songs by lyrics or title, retrieving the exact match from YouTube.",
+      technologies: "Python, API using websites",
+    },
+    5: {
+      title: "Other Many Projects",
+      description: "I created a lot of projects using Python.",
+      technologies: "Python, Django, HTML, CSS, JavaScript, Java",
+    },
   };
 
   const modal = document.getElementById("project-modal");
