@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<!-- Navbar Section -->
+<header>
+  <nav id="navbar">
+    <div class="logo">
+      <a href="#">Sanjar Rakhimjanov</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+
+
+<!-- Hero Section -->
+<section id="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Sanjar</span></h1>
+      <p>A Passionate Web Developer Crafting Beautiful Websites</p>
+      <a href="#projects" class="cta-button">View My Work</a>
+      <a href="#contact" class="cta-button-alt">Contact Me</a>
+      <div id="particles-js"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Sanjar, a passionate Web Developer with a love for creating functional and visually stunning websites.
+        I have a degree in Computer Science and over 3 years of experience in both front-end and back-end development.
+        I specialize in building efficient, scalable, and user-friendly applications.
+      </p>
+      <p>
+        When I’m not coding, you can find me exploring new technologies, gaming, or brainstorming innovative project ideas.
+      </p>
+      <a href="#contact" class="cta-button">Let's Connect</a>
+    </div>
+    <div class="about-image">
+      <img src="photo_2025-01-14_15-16-42.jpg" alt="About Me Image">
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <p>Here are some of the tools and technologies I excel in:</p>
+  <div class="skills-container">
+    <div class="skill">
+      <i class="fab fa-html5"></i>
+      <h3>HTML5</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 90%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <i class="fab fa-css3-alt"></i>
+      <h3>CSS3</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 85%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <i class="fab fa-js-square"></i>
+      <h3>JavaScript</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 80%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <i class="fab fa-python"></i>
+      <h3>Python</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 75%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <i class="fas fa-database"></i>
+      <h3>SQL</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 70%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <i class="fab fa-react"></i>
+      <h3>React</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 65%;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <p>Here are some of my featured projects. Click on any project to learn more.</p>
+  <div class="project-grid">
+    <div class="project-card" data-project="1">
+      <h3>Car Game</h3>
+      <p>A fast-paced car racing game developed in Python.</p>
+      <button class="view-btn">View Details</button>
+    </div>
+    <div class="project-card" data-project="2">
+      <h3>Chess Game</h3>
+      <p>A fully functional chess game with AI capabilities.</p>
+      <button class="view-btn">View Details</button>
+    </div>
+    <div class="project-card" data-project="3">
+      <h3>Portfolio Website</h3>
+      <p>A sleek, responsive portfolio site designed for developers.</p>
+      <button class="view-btn">View Details</button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal (Hidden by Default) -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-details"></div>
+  </div>
+</div>
+
+
+ <!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Have a question or want to collaborate? Feel free to reach out!</p>
+  <div class="contact-container">
+    <form class="contact-form">
+      <div class="form-group">
+        <input type="text" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Reach Me At:</h3>
+      <p><i class="fas fa-envelope"></i> sraximjonov767@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +998-99-027-82-19, +998-91-021-79-11</p>
+      <p><i class="fas fa-map-marker-alt"></i> Tashkent, Uzbekistan</p>
+      <div class="social-icons">
+        <a href="#" target="https://www.linkedin.com/in/sanjar-raximjonov-4709a12b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="https://github.com/Sanjar22CS"><i class="fab fa-github"></i></a>
+        <a href="#" target="https://www.twitter.com/SRakhimjanov"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="https://www.instagram.com/one_sanjar/profilecard/?igsh=MXh5ODlrMHduMQ=="><i class="fab fa-instagram"></i></a>
+        <a href="#" target="https://t.me/rakhmv_7"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093844!2d-122.41941638467966!3d37.77492977975954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808dcf5dc4d3%3A0x7e6b01c22984573d!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1677897891234!5m2!1sen!2sus"
+  width="100%"
+  height="200"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy">
+</iframe>
+</section>
+
+
+  <footer>
+    <p>© 2024 Sanjik. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
