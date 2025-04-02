@@ -604,7 +604,7 @@ footer {
   }
 }
 #hero {
-  background-image: url('photo_2024-11-30_19-26-38 (2).jpg');
+  background-image: url('#photo');
   background-size: cover; /* Ensures the image covers the entire hero section */
   background-position: center center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
